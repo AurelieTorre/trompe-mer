@@ -4,6 +4,11 @@ const Devis = () => {
 
   return (
     <div className="contact">
+      <div><h2>Contactez-moi<i>↓</i></h2></div>
+      <form>
+        <input type="text" placeholder="Votre nom">
+        </input>
+      </form>
 
     </div>
   );
