@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--mer-sombre);
+  color: var(--ecume);
+  height: 5.56vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ob {
+  width: 16px;
+  height: 16px;
+}
+
+a {
+  margin: 5px;
+  text-decoration: none;
+  color: var(--ecume);
+}

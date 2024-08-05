@@ -1,0 +1,18 @@
+.navbar {
+  background-color: var(--mer-moyenne);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1vw;
+  height: 5.56vw;
+}
+
+.navbar>a:first-of-type {
+  height: 50px;
+}
+
+#vague {
+  padding: auto;
+  width: 50px;
+  height: 50px;
+}

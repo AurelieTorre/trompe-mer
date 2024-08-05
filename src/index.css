@@ -1,3 +1,13 @@
+/* Colors */
+:root {
+  --mer-sombre: #003951;
+  --mer-moyenne: #22627F;
+  --mer-claire: #50A399;
+  --ecume: #F6F7EE;
+  --sable: #F6D9AF;
+  --goemon: #0C0A08;
+}
+
 body {
   overflow-x: hidden;
   margin: 0;
