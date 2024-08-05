@@ -1,3 +1,4 @@
+import React from 'react';
 import s from "./style.module.css";
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo-vague.jpg';
@@ -10,7 +11,7 @@ const Menu = ({ onDevisClick }) => {
       <Link to="/portraits">Portraits chinois</Link>
       <Link to="/oeuvres">Autres œuvres</Link>
       <Link to="/lartiste">À propos</Link>
-      <a href="#devis" onClick={onDevisClick}>Devis</a>
+      <a href="#" onClick={onDevisClick}>Devis</a>
     </div >
   );
 };

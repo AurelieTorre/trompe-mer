@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Slider from '../components/carrousel/carrousel.jsx';
+import Slider from '../components/carrousel/Carrousel.jsx';
 
 const Home = () => {
 
