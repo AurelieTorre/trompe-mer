@@ -1,7 +1,5 @@
 import s from "./style.module.css";
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 const Devis = () => {
 
@@ -32,6 +30,7 @@ const Devis = () => {
         fileName: e.target.files[0].name,
       });
     } else {
+      // pour que les gens ne soient pas obligés de joindre un fichier
       setFormData({
         ...formData,
         file: null,
@@ -52,7 +51,6 @@ const Devis = () => {
 
   return (
     <div className="devis" id="devis">
-      <div><h2>Demandez un devis ou posez-moi une question <FontAwesomeIcon icon={faChevronUp} /></h2></div>
       <form onSubmit={handleSubmit}>
         <div className="identity">
           <input
