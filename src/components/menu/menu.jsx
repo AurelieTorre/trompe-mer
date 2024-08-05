@@ -10,7 +10,7 @@ const Menu = ({ onDevisClick }) => {
       <Link to="/portraits">Portraits chinois</Link>
       <Link to="/oeuvres">Autres œuvres</Link>
       <Link to="/lartiste">À propos</Link>
-      <a href="#" onClick={onDevisClick}>Devis</a>
+      <a href="#devis" onClick={onDevisClick}>Devis</a>
     </div >
   );
 };

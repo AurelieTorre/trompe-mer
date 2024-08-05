@@ -10,7 +10,7 @@ const About = () => {
     <div>
       <Menu />
       <Banner />
-      <div className="content" width="200px" height="1500px" background-color="crimson">
+      <div className="content">
         {/* formation */}
         {/* photos */}
         {/* liste d'expos et presse */}
