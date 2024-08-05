@@ -8,3 +8,9 @@
   height: 600px;
   border: 1px solid crimson;
 }
+
+h1 {
+  font-family: "Charmonman", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
