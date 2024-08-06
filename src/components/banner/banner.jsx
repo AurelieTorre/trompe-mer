@@ -41,17 +41,16 @@ const Banner = () => {
 
   const formatTime = (timestamp) => {
     const date = new Date(timestamp * 1000); // Convertir le timestamp en millisecondes
-    let hours = date.getUTCHours() + 2; // Ajouter 2 heures pour UTC+2
-    const minutes = date.getUTCMinutes().toString().padStart(2, '0'); // Obtenir les minutes, formatées en deux chiffres
+    const formatter = new Intl.DateTimeFormat('fr-FR', {
+      hour: '2-digit',
+      minute: '2-digit',
+      timeZone: 'Europe/Paris',
+      hour12: false // Format 24 heures
+    });
 
-    // Ajuster les heures si elles dépassent 24 heures
-    if (hours >= 24) {
-      hours -= 24;
-    }
-
-    // Formatage des heures en deux chiffres
-    const formattedHours = hours.toString().padStart(2, '0');
-    return `${formattedHours}:${minutes}`; // Formater l'heure et les minutes
+    // Formater l'heure et les minutes
+    const [hours, minutes] = formatter.format(date).split(':');
+    return `${hours}h${minutes}`; // Remplacer les deux-points par un "h"
   };
 
   return (
