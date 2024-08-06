@@ -11,7 +11,8 @@ const Banner = () => {
   useEffect(() => {
     const fetchTideData = async () => {
       try {
-        const response = await fetch(`https://www.worldtides.info/api/v3?extremes&lat=47.7986100&lon=-4.2811100&key=f79dda50-3025-4e77-bbc1-23fafbf94a1f`);
+        const apiKey = process.env.REACT_APP_TIDE_API_KEY; // Utiliser la clé d'API depuis .env
+        const response = await fetch(`https://www.worldtides.info/api/v3?extremes&lat=47.7986100&lon=-4.2811100&key=${apiKey}`);
         if (!response.ok) {
           throw new Error('Erreur lors de la récupération des données de marée');
         }
