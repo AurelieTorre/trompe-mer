@@ -3,8 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 1vw;
+  padding-right: 2vw;
   height: 5.56vw;
+  font-size: 1.5rem;
 }
 
 .navbar>a:first-of-type {

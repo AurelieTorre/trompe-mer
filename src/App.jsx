@@ -48,7 +48,7 @@ const App = () => {
         <Outlet />
       </main>
       {showDevisForm && (
-        <div ref={formRef}>
+        <div ref={formRef} className='devis'>
           <h2 onClick={toggleFormVisibility} style={{ cursor: 'pointer' }}>
             Demandez un devis ou posez-moi une question{' '}
             {/* Change le sens de la flèche selon que le devis est rangé ou déroulé */}

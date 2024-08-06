@@ -1,0 +1,56 @@
+.hero {
+  position: relative;
+  height: 23.6vw;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  z-index: 1;
+  /* Petit, pour s'assurer qu'elle reste sous la div tide */
+  background-color: var(--ecume);
+  width: 53.2vw;
+  height: 14.8vw;
+}
+
+.title>h1 {
+  padding-bottom: 1rem;
+}
+
+.tide {
+  position: absolute;
+  top: 4.35vw;
+  right: 0;
+  z-index: 2;
+  /* Plus grand, pour s'assurer qu'elle est au-dessus de la div title */
+  height: 11.11vw;
+  width: 10.11vw;
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0;
+  padding-left: 1vw;
+  background-color: rgba(246, 247, 238, 0.5);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tide>p {
+  margin: 0;
+}
+
+.hour {
+  height: 2.6vw;
+  width: 8.33vw;
+  background-color: var(--ecume);
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 0.45vw;
+}

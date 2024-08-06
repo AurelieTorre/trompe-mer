@@ -50,7 +50,7 @@ const Devis = () => {
   };
 
   return (
-    <div className="devis" id="devis">
+    <div className={s.devis} id="devis">
       <form onSubmit={handleSubmit}>
         <div className="identity">
           <input

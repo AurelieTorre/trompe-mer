@@ -1,10 +1,74 @@
+import React, { useEffect, useState } from 'react';
 import s from "./style.module.css";
+import vague from "../../assets/bout-vague.jpg";
 
 const Banner = () => {
 
+  const [tideTime, setTideTime] = useState('');
+  const [tideType, setTideType] = useState('');
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchTideData = async () => {
+      try {
+        const response = await fetch(`https://www.worldtides.info/api/v3?extremes&lat=47.7986100&lon=-4.2811100&key=f79dda50-3025-4e77-bbc1-23fafbf94a1f`);
+        if (!response.ok) {
+          throw new Error('Erreur lors de la récupération des données de marée');
+        }
+
+        const data = await response.json();
+        console.log(data); // Afficher les données pour vérifier la structure
+
+        // Trouver la prochaine marée
+        const currentTime = new Date().getTime() / 1000; // Temps actuel en secondes depuis l'epoch (= 1er janvier 1970)
+        const nextTide = data.extremes.find(tide => tide.dt > currentTime);
+
+        if (nextTide) {
+          setTideTime(nextTide.dt);
+          setTideType(nextTide.type);
+        } else {
+          console.error('Aucune marée future trouvée');
+        }
+      } catch (error) {
+        console.error(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchTideData();
+  }, []);
+
+  const formatTime = (timestamp) => {
+    const date = new Date(timestamp * 1000); // Convertir le timestamp en millisecondes
+    let hours = date.getUTCHours() + 2; // Ajouter 2 heures pour UTC+2
+    const minutes = date.getUTCMinutes().toString().padStart(2, '0'); // Obtenir les minutes, formatées en deux chiffres
+
+    // Ajuster les heures si elles dépassent 24 heures
+    if (hours >= 24) {
+      hours -= 24;
+    }
+
+    // Formatage des heures en deux chiffres
+    const formattedHours = hours.toString().padStart(2, '0');
+    return `${formattedHours}:${minutes}`; // Formater l'heure et les minutes
+  };
+
   return (
-    <div className="hero">
-      <h1>Virginie Théry est une Artiste peintre – Trompe l’œil</h1>
+    <div className={s.hero} style={{ backgroundImage: `url(${vague})` }}>
+      <div className={s.title}>
+        <h1>Virginie Théry est une Artiste peintre – Trompe l’œil</h1>
+      </div>
+      <div className={s.tide}>
+        <p>Prochaine marée :</p>
+        <div className={s.hour}>
+          {loading ? 'Chargement...' : tideTime ? (
+            <>
+              {tideType === 'High' ? '↑' : '↓'} {formatTime(tideTime)}
+            </>
+          ) : 'Aucune donnée disponible'}
+        </div>
+      </div>
     </div>
   );
 };
