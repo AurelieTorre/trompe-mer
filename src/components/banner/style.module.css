@@ -33,13 +33,13 @@
   font-size: 1.5rem;
   text-align: left;
   margin: 0;
-  padding-left: 1vw;
+  padding-left: 1.5vw;
   background-color: rgba(246, 247, 238, 0.5);
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .tide>p {

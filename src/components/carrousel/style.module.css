@@ -1,0 +1,55 @@
+.carrousel {
+  position: relative;
+  width: 85vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  color: var(--goemon);
+  /* Couleur de la flèche */
+  border: none;
+  /* Pas de fond */
+  font-size: 5.5rem;
+  /* Taille des flèches */
+  cursor: pointer;
+  padding: 0.5rem;
+  outline: none;
+  /* Supprimer le contour par défaut */
+  z-index: 1;
+  /* S'assurer que les flèches sont au-dessus des images */
+}
+
+.arrow.left {
+  left: -6.5vw;
+  /* Décale la flèche vers la gauche en dehors de l'image */
+}
+
+.arrow.right {
+  right: -6.5vw;
+  /* Décale la flèche vers la droite en dehors de l'image */
+}
+
+.arrow:hover {
+  color: var(--mer-claire);
+  /* Changer la couleur au survol */
+}
