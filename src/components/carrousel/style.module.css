@@ -16,8 +16,8 @@
 }
 
 .image {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 95vh;
 }
 
 .arrow {
@@ -40,12 +40,12 @@
 }
 
 .arrow.left {
-  left: -6.5vw;
+  left: -7vh;
   /* Décale la flèche vers la gauche en dehors de l'image */
 }
 
 .arrow.right {
-  right: -6.5vw;
+  right: -7vh;
   /* Décale la flèche vers la droite en dehors de l'image */
 }
 

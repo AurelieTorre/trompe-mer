@@ -16,8 +16,26 @@ h2 {
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
+  padding-left: 7vw;
 }
 
 .devis {
   text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  color: var(--ecume);
+  font-size: 1.5rem;
+  align-self: center;
+  font-family: "Tenor Sans", sans-serif;
+  background: var(--mer-moyenne);
+  border: none;
+  border-radius: 8px;
+  width: 340px;
+  height: 60px;
 }

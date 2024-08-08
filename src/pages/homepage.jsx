@@ -11,6 +11,8 @@ import alain from "../assets/alainhergott.jpg";
 import botton from "../assets/botton.jpg";
 import chabaud from "../assets/cathchab.jpg";
 import jc from "../assets/jclecloarec.jpg";
+import cadres from "../assets/cadres.png";
+import tete from "../assets/virginiethery.webp";
 
 
 const imagesFresk = [
@@ -36,26 +38,25 @@ const Home = () => {
     <div>
       <div className="content">
         <h2>Trompe l’œil en fresques</h2>
-        {/* section trompe-l'œil */}
         <Slider images={imagesFresk} />
         {/* détail */}
-        {/* bouton */}
+        <button className="button" onClick={() => window.location.href = '/trompe-loeil'}>En savoir plus</button>
       </div>
       <div className="content">
         <h2>Portraits chinois</h2>
         <Slider images={imagesFaces} />
         {/* détail */}
-        {/* bouton */}
+        <button className="button" onClick={() => window.location.href = '/portraits'}>En savoir plus</button>
       </div>
       <div className="content">
-        {/* section autres œuvres */}
-        {/* photos */}
-        {/* bouton */}
+        <h2>Mes autres œuvres</h2>
+        <img src={cadres} alt="petits tableaux des œuvres" />
+        <button className="button" onClick={() => window.location.href = '/oeuvres'}>En voir plus</button>
       </div>
       <div className="content">
-        {/* section à propos */}
-        {/* photo */}
-        {/* bouton */}
+        <h2>En savoir plus sur moi</h2>
+        <img src={tete} alt="photographie de l'artiste" />
+        <button className="button" onClick={() => window.location.href = '/lartiste'}>Voir mon parcours</button>
       </div>
     </div>
   );
