@@ -15,6 +15,7 @@
   width: 315px;
   height: 315px;
   margin: 15px;
+  object-fit: cover;
 }
 
 .cardInfos {
@@ -22,10 +23,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .cardInfos>h3 {
-  margin: 0 15px 8px 15px;
+  margin: 0 15px 6px 15px;
   font-family: "Tenor sans", sans-serif;
   font-weight: 600;
   font-size: 1.3rem;
@@ -35,4 +37,5 @@
 .cardInfos>p {
   margin: 0;
   font-size: 1.3rem;
+  text-align: center;
 }
