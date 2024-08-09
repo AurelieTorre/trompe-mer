@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Slider from '../components/carrousel/Carrousel.jsx';
 import cabane from "../assets/cabane-soizen.jpg";
 import zip from "../assets/fermeture.jpg";
