@@ -94,3 +94,73 @@ p {
   display: flex;
   justify-content: space-around;
 }
+
+#skills {
+  margin-top: 4vw;
+}
+
+#atelier {
+  margin-top: 0;
+}
+
+.opus-img {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.img-strip {
+  display: flex;
+  justify-content: space-between;
+  height: 32.25vw;
+}
+
+.img-strip>img {
+  width: 21vw;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.opus-img>img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  margin-top: 2vw;
+}
+
+.exhibitions {
+  margin: 0 auto;
+}
+
+.exhibitions>h2 {
+  margin-bottom: 2.5vw;
+  padding: 0;
+  text-align: center;
+}
+
+.expos {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column1,
+.column2 {
+  width: 43.5vw;
+}
+
+.column1>.text-detail,
+.column2>.text-detail {
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+  width: 100%;
+}
+
+.column1>.text-detail>h2,
+.column2>.text-detail>h2 {
+  margin-bottom: 3.75vw;
+}
+
+.presse>img {
+  width: 43vw;
+}

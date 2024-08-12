@@ -17,4 +17,77 @@
   padding: auto;
   width: 50px;
   height: 50px;
+  transition: 0.3s;
+}
+
+#vague:hover {
+  transform: scale(1.05);
+  border-radius: 8px;
+}
+
+#vague:active {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+.item {
+  display: block;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 0 15px #8e54e9;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  padding: 7px 15px;
+  margin-right: 30px;
+}
+
+/* Préparation d'éléments transparents qui apparaîtront au survol */
+.item:before,
+.item:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease;
+}
+
+/* Bout de cadre en haut à gauche */
+.item:after {
+  top: 0;
+  left: 0;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+/* Bout de cadre en bas à droite */
+.item:before {
+  right: 0;
+  bottom: 0;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+/* Afficher un début de cadre au survol */
+.item:hover::before,
+.item:hover::after {
+  width: 10px;
+  height: 10px;
+  border-color: var(--ecume);
+}
+
+/* Réaction au clic */
+.item:active {
+  color: var(--ecume);
+  background-color: var(--mer-claire);
+}
+
+/* Garder le cadre visible après le clic */
+.item.active::before,
+.item.active::after {
+  width: 15px;
+  height: 15px;
 }
