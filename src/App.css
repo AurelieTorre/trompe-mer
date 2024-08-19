@@ -59,6 +59,16 @@ p {
   border-radius: 8px;
   width: 320px;
   height: 56px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: var(--mer-claire);
+  color: var(--goemon);
+}
+
+.button:active {
+  transform: scale(1.05);
 }
 
 .info-container {
@@ -163,4 +173,37 @@ p {
 
 .presse>img {
   width: 43vw;
+}
+
+.legal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4.5vw;
+}
+
+.mentions,
+.edition {
+  width: 80vw;
+}
+
+.legal-content h2 {
+  padding: 0;
+}
+
+#vigueur {
+  margin: -1.5vw 0 3.5vw;
+}
+
+.edition>h2 {
+  margin-top: 3vw;
+  margin-bottom: 0;
+}
+
+.alinea {
+  margin-top: 3.5vw;
+}
+
+.edition li {
+  font-size: 1.45rem;
 }
