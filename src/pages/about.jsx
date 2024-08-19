@@ -102,6 +102,7 @@ const About = () => {
             </div>
             <div className="presse">
               <img src={Coupure} alt="article de question d'art sur Virginie Théry et les matières qu'elle peint" />
+              <p>magazine Questions d'Art, 2017</p>
             </div>
           </div>
 

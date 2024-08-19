@@ -51,8 +51,8 @@ const Devis = () => {
 
   return (
     <div className={s.devis} id="devis">
-      <form onSubmit={handleSubmit}>
-        <div className="identity">
+      <form onSubmit={handleSubmit} className={s.form}>
+        <div className={s.contact}>
           <input
             type="text"
             id="name"
@@ -69,7 +69,7 @@ const Devis = () => {
             value={formData.firstname}
             onChange={handleChange}></input>
         </div>
-        <div className="contact">
+        <div className={s.contact}>
           <input
             type="email"
             id="email"
@@ -86,24 +86,27 @@ const Devis = () => {
             value={formData.phone}
             onChange={handleChange}></input>
         </div>
-        <input
-          type="text"
-          id="object"
-          name="object"
-          placeholder="Objet du message"
-          value={formData.object}
-          onChange={handleChange}></input>
-        <input
-          type="textarea"
-          id="message"
-          name="message"
-          rows="5"
-          cols="33"
-          placeholder="Votre message"
-          value={formData.message}
-          onChange={handleChange}
-          required></input>
-        <div>
+        <div className={s.object}>
+          <input
+            type="text"
+            id="object"
+            name="object"
+            placeholder="Objet du message"
+            value={formData.object}
+            onChange={handleChange}></input>
+        </div>
+        <div className={s.message}>
+          <textarea
+            type="textarea"
+            wrap="hard"
+            id="message"
+            name="message"
+            placeholder="Votre message"
+            value={formData.message}
+            onChange={handleChange}
+            required></textarea>
+        </div>
+        <div className={s.buttons}>
           <div>
             <input
               type="file"
@@ -112,12 +115,12 @@ const Devis = () => {
               style={{ display: 'none' }}
               onChange={handleFileChange}
             />
-            <button type="button" onClick={handleFileClick}>
+            <button id={s.join} type="button" onClick={handleFileClick}>
               Joindre un fichier
             </button>
             {formData.fileName && <span>{formData.fileName}</span>}
           </div>
-          <button type="submit">Envoyer</button>
+          <button id={s.button} type="submit">Envoyer</button>
         </div>
       </form>
 
