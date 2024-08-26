@@ -44,9 +44,16 @@ p {
   margin: 5vw 0 4.5vw;
 }
 
-.text-detail>h2 {
+.text-detail>h2,
+.how>h2 {
   padding-left: 0;
   margin: 0;
+}
+
+.how {
+  width: 48.61vw;
+  align-self: center;
+  margin: 5vw 0 0.6vw;
 }
 
 .button {
@@ -69,6 +76,60 @@ p {
 
 .button:active {
   transform: scale(1.05);
+}
+
+.part-top,
+.part-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.part-top>img {
+  width: 22vw;
+}
+
+.part-bottom>img {
+  width: 37vw;
+  height: 37vw;
+  margin-top: 6vw;
+}
+
+.etapes {
+  padding-top: 2.75vw;
+}
+
+.opus-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vw;
+  margin: 0.6vw;
+}
+
+.opus-part {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+}
+
+#chabaud {
+  max-width: 30vw;
+  height: auto;
+}
+
+#alain {
+  max-width: 55vw;
+  height: auto;
+}
+
+#botton {
+  max-width: 55vw;
+  height: auto;
+}
+
+#jc {
+  max-width: 30vw;
+  height: auto;
 }
 
 .info-container {

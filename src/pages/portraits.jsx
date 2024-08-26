@@ -1,4 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import alain from "../assets/alainhergott.jpg";
+import botton from "../assets/botton.jpg";
+import chabaud from "../assets/cathchab.jpg";
+import jc from "../assets/jclecloarec.jpg";
+
 
 const Portrait = () => {
 
@@ -6,9 +11,17 @@ const Portrait = () => {
     <div className="content">
       <div className="content">
         <h2>Portraits personnalisés</h2>
-        <div className="opus-img">
+        <div className="opus-grid">
+          <div className="opus-part">
+            <img src={chabaud} id="chabaud" alt="ouverture sur une mer agîtée avec sur le rebord un pot de tournesol et une flûte traversière" />
+            <img src={alain} id="alain" alt="ouverture sur une lande avec chapelle, entourée d'équipements de sports d'aventure" />
+          </div>
+          <div className="opus-part">
+            <img src={botton} id="botton" alt="niche remplie de livres ainsi que d'une guitare et d'un petit avion" />
+            <img src={jc} id="jc" alt="fenêtre ouverte sur un port la nuit avec son phare, et sur le rebord des jumelles, une mésange, des cartes" />
+          </div>
         </div>
-        <div className="text-detail">
+        <div className="how">
           <h2>Modalités</h2>
           <p>Offrez un portrait qui lui ressemble spirituellement à la personne du jour :</p>
           <p>
@@ -21,7 +34,7 @@ const Portrait = () => {
             • des livres qu’elle aime<br />
             • ...
           </p>
-          <h2>Étapes</h2>
+          <h2 className="etapes">Étapes</h2>
           <p>Un premier appel pour parler de la personne et fixer des dates ;</p>
           <p>Un rendu de crayonné pour valider le projet ;</p>
           <p>Un second crayonné éventuel intégrant les modifications indiquées à la suite du premier ;</p>

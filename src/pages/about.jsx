@@ -4,7 +4,7 @@ import Atelier2 from '../assets/atelier2.jpg';
 import Atelier3 from '../assets/atelier5.jpg';
 import Atelier4 from '../assets/atelier10.jpg';
 import Atelier5 from '../assets/atelier4.jpg';
-import Coupure from '../assets/QdA_page_Virginie_Thery_1.png'
+import Coupure from '../assets/QdA_page_Virginie_Thery_1.png';
 
 const About = () => {
 
@@ -12,7 +12,7 @@ const About = () => {
     <div className="content">
       <div className="text-detail">
         <h2>Études et formation</h2>
-        <p>• Ecole Nationale d’Art de Cergy Pontoise 1981 - 1986  :</p>
+        <p>• École Nationale d’Art de Cergy Pontoise 1981 - 1986  :</p>
         <p>Initiée à beaucoup de techniques différentes, de  la photographie à l’illustration en passant par la typographie et l’aquarelle</p>
         <p>• INFA de Gouvieux Chantilly :</p>
         <p>Spécialisée dans la peinture à l’huile et l’acrylique lors d’une formation professionnelle de peintre en décor, où j’ai découvert les fausses-matières – faux-bois, faux-marbres, fausses pierres, etc. – et les trompe-l’œil</p>
@@ -102,7 +102,7 @@ const About = () => {
             </div>
             <div className="presse">
               <img src={Coupure} alt="article de question d'art sur Virginie Théry et les matières qu'elle peint" />
-              <p>magazine Questions d'Art, 2017</p>
+              <p>magazine Quai des Art, 2017</p>
             </div>
           </div>
 
