@@ -12,7 +12,7 @@ const About = () => {
     <div className="content">
       <div className="text-detail">
         <h2>Études et formation</h2>
-        <p>• École Nationale d’Art de Cergy Pontoise 1981 - 1986  :</p>
+        <p>• Ecole Nationale d’Art de Cergy Pontoise 1981 - 1986  :</p>
         <p>Initiée à beaucoup de techniques différentes, de  la photographie à l’illustration en passant par la typographie et l’aquarelle</p>
         <p>• INFA de Gouvieux Chantilly :</p>
         <p>Spécialisée dans la peinture à l’huile et l’acrylique lors d’une formation professionnelle de peintre en décor, où j’ai découvert les fausses-matières – faux-bois, faux-marbres, fausses pierres, etc. – et les trompe-l’œil</p>

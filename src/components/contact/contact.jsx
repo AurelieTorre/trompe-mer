@@ -57,7 +57,7 @@ const Devis = () => {
             type="text"
             id="name"
             name="lastname"
-            placeholder="Nom"
+            placeholder="Nom (obligatoire)"
             value={formData.lastname}
             onChange={handleChange}
             required></input>
@@ -74,7 +74,7 @@ const Devis = () => {
             type="email"
             id="email"
             name="email"
-            placeholder="Email"
+            placeholder="Email (obligatoire)"
             value={formData.email}
             onChange={handleChange}
             required></input>
@@ -101,7 +101,7 @@ const Devis = () => {
             wrap="hard"
             id="message"
             name="message"
-            placeholder="Votre message"
+            placeholder="Votre message (obligatoire)"
             value={formData.message}
             onChange={handleChange}
             required></textarea>
