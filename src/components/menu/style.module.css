@@ -37,7 +37,7 @@
   display: flex;
   align-items: baseline;
   justify-content: center;
-  text-shadow: 0 0 15px #8e54e9;
+  text-shadow: 0 0 15px var(--mer-claire);
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
   padding: 0.5vw 1vw;
 }
@@ -85,24 +85,21 @@
 }
 
 /* Garder le cadre visible après le clic */
-.item.active::before,
+/* .item.active::before,
 .item.active::after {
   width: 15px;
   height: 15px;
-}
+} */
 
 .burgerIcon {
   display: none;
   /* Caché par défaut */
-  flex-direction: column;
   cursor: pointer;
 }
 
-.burgerLine {
-  width: 25px;
-  height: 3px;
-  background-color: var(--ecume);
-  margin: 4px 0;
+.burgerIcon svg {
+  color: var(--ecume);
+  font-size: 2rem;
 }
 
 .menuItems {
@@ -134,6 +131,7 @@
     top: 50px;
     right: 10px;
     padding: 10px;
+    width: 40vw;
   }
 
   .burgerIcon {
@@ -150,5 +148,11 @@
     /* Affiche le menu burger lorsqu'il est ouvert */
     background-color: var(--mer-sombre);
     z-index: 3;
+  }
+
+  #vague {
+    margin-top: 10.5px;
+    width: 30px;
+    height: 30px;
   }
 }

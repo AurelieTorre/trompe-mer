@@ -3,6 +3,8 @@ import s from "./style.module.css";
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import logo from '../../assets/logo-vague.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Menu = ({ onDevisClick }) => {
 
@@ -29,9 +31,7 @@ const Menu = ({ onDevisClick }) => {
 
       {/* Icône du menu burger */}
       <div className={s.burgerIcon} onClick={toggleMenu}>
-        <span className={s.burgerLine}></span>
-        <span className={s.burgerLine}></span>
-        <span className={s.burgerLine}></span>
+        <FontAwesomeIcon icon={faBars} />
       </div>
 
       {/* Menu déroulant */}

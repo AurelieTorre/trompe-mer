@@ -63,6 +63,7 @@
   .title>h1 {
     max-width: 45vw;
     font-size: 2.3rem;
+    line-height: 3.3rem;
   }
 
   .tide {
@@ -72,4 +73,62 @@
   .tide>p {
     font-size: 1.2rem;
   }
+}
+
+@media (max-width: 1020px) {
+  .title>h1 {
+    font-size: 2rem;
+    line-height: 2.9rem;
+    ;
+  }
+
+  .tide {
+    font-size: 1.1rem;
+  }
+
+  .tide>p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 885px) {
+  .title>h1 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  .tide {
+    font-size: 1rem;
+  }
+
+  .tide>p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 795px) {
+  .title>h1 {
+    font-size: 1.6rem;
+  }
+
+  .tide {
+    font-size: 0.9rem;
+  }
+
+  .tide>p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 707px) {
+  .title>h1 {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+
+  .tide {
+    display: none;
+  }
+
+
 }
