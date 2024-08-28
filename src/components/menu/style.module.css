@@ -35,12 +35,11 @@
   height: 100%;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   text-shadow: 0 0 15px #8e54e9;
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  padding: 7px 15px;
-  margin-right: 30px;
+  padding: 0.5vw 1vw;
 }
 
 /* Préparation d'éléments transparents qui apparaîtront au survol */
@@ -90,4 +89,55 @@
 .item.active::after {
   width: 15px;
   height: 15px;
+}
+
+.burgerIcon {
+  display: none;
+  /* Caché par défaut */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burgerLine {
+  width: 25px;
+  height: 3px;
+  background-color: var(--ecume);
+  margin: 4px 0;
+}
+
+.menuItems {
+  display: flex;
+  width: 85.5vw;
+  justify-content: space-between;
+}
+
+.menuItems.open {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 10px;
+  }
+
+  .burgerIcon {
+    display: flex;
+    /* Affiche l'icône du burger sur mobile */
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .menuItems.open {
+    display: flex;
+    /* Affiche le menu burger lorsqu'il est ouvert */
+    background-color: var(--mer-sombre);
+    z-index: 3;
+  }
 }
