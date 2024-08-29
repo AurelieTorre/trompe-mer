@@ -291,3 +291,12 @@ footer {
 .scroll-to-top.show {
   display: block;
 }
+
+.scroll-to-top:hover {
+  background-color: var(--mer-sombre);
+  color: var(--ecume);
+}
+
+.scroll-to-top:active {
+  transform: scale(1.05);
+}
