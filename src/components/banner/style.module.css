@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 23.6vw;
+  height: 23.95vw;
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -187,6 +187,11 @@
 }
 
 @media (max-width: 300px) {
+
+  .hero {
+    height: 150px;
+  }
+
   .title {
     width: 86vw;
   }

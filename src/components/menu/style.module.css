@@ -5,7 +5,7 @@
   align-items: center;
   padding-right: 2vw;
   padding-left: 0.5vw;
-  height: 5.56vw;
+  height: 80px;
   font-size: 1.45rem;
 }
 
@@ -14,7 +14,6 @@
 }
 
 #vague {
-  padding: auto;
   width: 50px;
   height: 50px;
   transition: 0.3s;
@@ -32,10 +31,10 @@
 
 .item {
   display: block;
-  height: 100%;
+  height: 2.75vw;
   position: relative;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   text-shadow: 0 0 15px var(--mer-claire);
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -84,13 +83,6 @@
   background-color: var(--mer-claire);
 }
 
-/* Garder le cadre visible après le clic */
-/* .item.active::before,
-.item.active::after {
-  width: 15px;
-  height: 15px;
-} */
-
 .burgerIcon {
   display: none;
   /* Caché par défaut */
@@ -99,7 +91,7 @@
 
 .burgerIcon svg {
   color: var(--ecume);
-  font-size: 2rem;
+  font-size: 3.4rem;
 }
 
 .menuItems {
@@ -113,17 +105,30 @@
 }
 
 @media (max-width: 1001px) {
-  #vague {
-    width: 40px;
-    height: 40px;
-  }
-
   .navbar {
     font-size: 1.2rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
+  .menuItems {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 780px) {
+  #vague {
+    margin-top: 4px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .menuItems {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 770px) {
   .menuItems {
     display: none;
     flex-direction: column;
@@ -131,7 +136,9 @@
     top: 50px;
     right: 10px;
     padding: 10px;
-    width: 40vw;
+    width: 175px;
+    font-size: 1rem;
+    line-height: 1rem;
   }
 
   .burgerIcon {
@@ -141,6 +148,7 @@
 
   .navbar {
     position: relative;
+    height: 60px;
   }
 
   .menuItems.open {
@@ -151,8 +159,14 @@
   }
 
   #vague {
-    margin-top: 10.5px;
-    width: 30px;
-    height: 30px;
+    margin-top: 2.5px;
+    border-radius: 4px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .item {
+    height: 17px;
+    padding: 5px;
   }
 }
