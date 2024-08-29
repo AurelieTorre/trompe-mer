@@ -129,6 +129,69 @@
   .tide {
     display: none;
   }
+}
 
+@media (max-width: 620px) {
+  .title>h1 {
+    max-width: 37.5vw;
+  }
+}
 
+@media (max-width: 578px) {
+  .title>h1 {
+    max-width: 41.5vw;
+  }
+}
+
+@media (max-width: 521px) {
+  .title>h1 {
+    max-width: 46vw;
+  }
+}
+
+@media (max-width: 471px) {
+  .title>h1 {
+    max-width: 51vw;
+  }
+}
+
+@media (max-width: 424px) {
+  .title {
+    width: 70vw;
+    border-radius: 8px;
+  }
+
+  .title>h1 {
+    max-width: 57vw;
+  }
+}
+
+@media (max-width: 380px) {
+  .title {
+    width: 75vw;
+  }
+
+  .title>h1 {
+    max-width: 63.5vw;
+  }
+}
+
+@media (max-width: 340px) {
+  .title {
+    width: 80vw;
+  }
+
+  .title>h1 {
+    max-width: 71vw;
+  }
+}
+
+@media (max-width: 300px) {
+  .title {
+    width: 86vw;
+  }
+
+  .title>h1 {
+    max-width: 80.5vw;
+  }
 }

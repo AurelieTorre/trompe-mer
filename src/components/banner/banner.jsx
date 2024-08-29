@@ -7,6 +7,7 @@ const Banner = () => {
   const [tideTime, setTideTime] = useState('');
   const [tideType, setTideType] = useState('');
   const [loading, setLoading] = useState(true);
+  const [titleText, setTitleText] = useState('Virginie Théry est une Artiste peintre – Trompe l’œil');
 
   useEffect(() => {
     const fetchTideData = async () => {
@@ -18,7 +19,7 @@ const Banner = () => {
         }
 
         const data = await response.json();
-        console.log(data); // Afficher les données pour vérifier la structure
+        // console.log(data); // Afficher les données pour vérifier la structure
 
         // Trouver la prochaine marée
         const currentTime = new Date().getTime() / 1000; // Temps actuel en secondes depuis l'epoch (= 1er janvier 1970)
@@ -40,6 +41,26 @@ const Banner = () => {
     fetchTideData();
   }, []);
 
+  // Système de changement de titre selon la taille en mode dynamique, peut-être plus polluant ici que de gérer juste 2 titres alternatifs en css - display: none/block
+  useEffect(() => {
+    const updateTitle = () => {
+      if (window.innerWidth < 621) {
+        setTitleText('Virginie Théry est Peintre – Trompe l’œil');
+      } else {
+        setTitleText('Virginie Théry est une Artiste peintre – Trompe l’œil');
+      }
+    };
+
+    window.addEventListener('resize', updateTitle);
+
+    // Vérifier la largeur de l'écran au premier rendu
+    updateTitle();
+
+    return () => {
+      window.removeEventListener('resize', updateTitle);
+    };
+  }, []);
+
   const formatTime = (timestamp) => {
     const date = new Date(timestamp * 1000); // Convertir le timestamp en millisecondes
     const formatter = new Intl.DateTimeFormat('fr-FR', {
@@ -57,7 +78,7 @@ const Banner = () => {
   return (
     <div className={s.hero} style={{ backgroundImage: `url(${vague})` }}>
       <div className={s.title}>
-        <h1>Virginie Théry est une Artiste peintre – Trompe l’œil</h1>
+        <h1>{titleText}</h1>
       </div>
       <div className={s.tide}>
         <p>Prochaine marée :</p>
