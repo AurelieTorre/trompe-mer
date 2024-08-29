@@ -60,10 +60,14 @@
 }
 
 @media (max-width: 1150px) {
+  .hero {
+    height: 28vw;
+  }
+
   .title>h1 {
     max-width: 45vw;
     font-size: 2.3rem;
-    line-height: 3.3rem;
+    line-height: 4rem;
   }
 
   .tide {
@@ -76,10 +80,13 @@
 }
 
 @media (max-width: 1020px) {
+  .hero {
+    height: 30vw;
+  }
+
   .title>h1 {
     font-size: 2rem;
     line-height: 2.9rem;
-    ;
   }
 
   .tide {
@@ -92,9 +99,14 @@
 }
 
 @media (max-width: 885px) {
+  .title {
+    width: 55vw;
+  }
+
   .title>h1 {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: 1.9rem;
+    line-height: 2.7rem;
+    max-width: 50vw;
   }
 
   .tide {
@@ -122,6 +134,7 @@
 
 @media (max-width: 707px) {
   .title>h1 {
+    max-width: 45vw;
     font-size: 1.4rem;
     line-height: 2.1rem;
   }
@@ -138,65 +151,87 @@
 }
 
 @media (max-width: 578px) {
+  .hero {
+    height: 41.1vw;
+  }
+
+  .title {
+    width: 55vw;
+  }
+
   .title>h1 {
     max-width: 41.5vw;
   }
 }
 
 @media (max-width: 521px) {
+  .title {
+    border-radius: 8px;
+    width: 65vw;
+    height: 25vw;
+  }
+
   .title>h1 {
     max-width: 46vw;
+    line-height: 2.7rem;
   }
 }
 
 @media (max-width: 471px) {
+  .title {
+    border-radius: 8px;
+    width: 70vw;
+    height: 25vw;
+  }
+
   .title>h1 {
     max-width: 51vw;
+    line-height: 2.7rem;
   }
 }
 
 @media (max-width: 424px) {
   .title {
     width: 70vw;
-    border-radius: 8px;
+    height: 25vw;
   }
 
   .title>h1 {
     max-width: 57vw;
+    line-height: 2.3rem;
   }
 }
 
 @media (max-width: 380px) {
   .title {
     width: 75vw;
+    height: 27vw;
   }
 
   .title>h1 {
-    max-width: 63.5vw;
+    max-width: 63vw;
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 344px) {
   .title {
     width: 80vw;
+    height: 30vw;
   }
 
   .title>h1 {
-    max-width: 71vw;
+    max-width: 70vw;
   }
 }
 
-@media (max-width: 300px) {
-
-  .hero {
-    height: 150px;
-  }
-
+@media (max-width: 311px) {
   .title {
     width: 86vw;
+    margin-top: 1px;
   }
 
   .title>h1 {
-    max-width: 80.5vw;
+    max-width: 77.5vw;
+    line-height: 2.2rem;
   }
 }
