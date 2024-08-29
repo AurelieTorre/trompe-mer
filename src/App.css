@@ -268,3 +268,26 @@ p {
 .edition li {
   font-size: 1.45rem;
 }
+
+footer {
+  position: relative;
+}
+
+.scroll-to-top {
+  position: absolute;
+  /* Positionné par rapport au parent (footer) */
+  bottom: 70px;
+  right: 20px;
+  background-color: var(--mer-claire);
+  color: var(--goemon);
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+}
+
+.scroll-to-top.show {
+  display: block;
+}
