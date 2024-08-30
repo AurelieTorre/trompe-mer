@@ -32,6 +32,11 @@ p {
   margin-bottom: 5vw;
 }
 
+.devis .svg-inline--fa {
+  font-size: 3rem;
+  transform: translateY(7px);
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -295,21 +300,86 @@ footer {
   transform: scale(1.05);
 }
 
+@media (max-width: 980px) {
+  .devis>h2 {
+    padding-left: 6vw;
+  }
+}
+
+@media (max-width: 945px) {
+  .devis>h2 {
+    padding-left: 5vw;
+  }
+}
+
+@media (max-width: 926px) {
+  .devis>h2 {
+    font-size: 1.8rem;
+    padding-left: 4vw;
+  }
+}
+
 @media (max-width: 835px) {
   .devis>h2 {
+    display: flex;
+    align-items: center;
+    line-height: 2.1rem;
+    margin-right: 4vw;
+    font-size: 1.5rem;
+  }
+
+
+  .devis .svg-inline--fa {
+    font-size: 3rem;
+    margin-left: 20px;
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 730px) {
+  .devis>h2 {
+    text-align: center;
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .devis>h2 {
+    width: 88vw;
+  }
+}
+
+@media (max-width: 384px) {
+  .devis>h2 {
+    width: 85vw;
+    padding-left: 6vw;
+  }
+
+  .devis .svg-inline--fa {
+    font-size: 3rem;
+    margin-left: 5px;
+  }
+
+  .scroll-to-top {
+    bottom: 20px;
+    right: 16px;
+    font-size: 1.5rem;
+    padding: 6px 15px 9px;
+  }
+}
+
+@media (max-width: 354px) {
+  .devis>h2 {
+    line-height: 1.8rem;
   }
 
   .devis .svg-inline--fa {
     font-size: 2rem;
+    margn-left: 5px;
   }
-}
 
-@media (max-width: 694px) {
   .scroll-to-top {
     bottom: 25px;
     right: 14px;
-    font-size: 1.5rem;
-    padding: 6px 15px 9px;
   }
 }

@@ -49,7 +49,7 @@ a {
   }
 }
 
-@media (max-width: 694px) {
+@media (max-width: 354px) {
   .footer {
     height: 95px;
   }
