@@ -295,9 +295,20 @@ footer {
   transform: scale(1.05);
 }
 
+@media (max-width: 835px) {
+  .devis>h2 {
+    font-size: 1.3rem;
+  }
+
+  .devis .svg-inline--fa {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 694px) {
   .scroll-to-top {
-    bottom: 17px;
+    bottom: 25px;
+    right: 14px;
     font-size: 1.5rem;
     padding: 6px 15px 9px;
   }

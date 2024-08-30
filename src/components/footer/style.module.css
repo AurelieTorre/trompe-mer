@@ -48,3 +48,21 @@ a {
     transform: translateY(3px);
   }
 }
+
+@media (max-width: 694px) {
+  .footer {
+    height: 95px;
+  }
+
+  .footer a:first-of-type {
+    transform: translateY(-8px);
+  }
+
+  .footer a>svg {
+    transform: translateY(-8px);
+  }
+
+  #ob {
+    transform: translate(-25px, 17px);
+  }
+}

@@ -1,7 +1,7 @@
 .devis {
   text-align: center;
-  width: 90vw;
-  margin: 0 5vw;
+  width: 94vw;
+  margin: 0 2.5vw;
 }
 
 .form {
@@ -61,14 +61,23 @@
   gap: 4.25vw;
 }
 
-#join {
+#join,
+#button {
   border-radius: 8px;
-  border: 3px solid var(--mer-claire);
   font-family: "Tenor Sans", sans-serif;
   font-size: 1.5rem;
   padding: 0.8rem;
   width: 20vw;
   transition: 0.3s;
+}
+
+#join {
+  border: 3px solid var(--mer-claire);
+}
+
+#button {
+  border: none;
+  background-color: var(--mer-claire);
 }
 
 #join:hover {
@@ -76,26 +85,114 @@
   border: 3px solid var(--mer-sombre);
 }
 
-#join:active {
-  transform: scale(1.05);
-}
-
-#button {
-  border: none;
-  border-radius: 8px;
-  background-color: var(--mer-claire);
-  font-family: "Tenor Sans", sans-serif;
-  font-size: 1.5rem;
-  padding: 0.8rem;
-  width: 20vw;
-  transition: 0.3s;
-}
-
 #button:hover {
   background-color: var(--mer-sombre);
   color: var(--ecume);
 }
 
+#join:active,
 #button:active {
   transform: scale(1.05);
+}
+
+@media (max-width: 1175px) {
+
+  #join,
+  #button {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1040px) {
+
+  #join,
+  #button {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 903px) {
+
+  #join,
+  #button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 835px) {
+  .devis {
+    margin-left: 2vw;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact>input {
+    width: 85vw;
+    margin: 1.35vw;
+  }
+
+  .message>textarea {
+    height: 160px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.8vw;
+  }
+
+  #join,
+  #button {
+    width: 250px;
+    font-size: 1.5rem;
+  }
+
+  #button {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 675px) {
+  .devis {
+    margin-left: 1.5vw;
+  }
+}
+
+@media (max-width: 485px) {
+  .devis {
+    margin-left: 1vw;
+  }
+}
+
+@media (max-width: 370px) {
+  .devis {
+    margin: 0;
+  }
+
+  .object>input,
+  .message>textarea {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 300px) {
+  .devis {
+    margin: 0;
+    padding-left: 1px;
+  }
+
+  .contact {
+    gap: 3vw;
+    margin: 1.5vw;
+  }
+
+  .object>input,
+  .message>textarea {
+    margin: 3vw 0;
+  }
+
 }
