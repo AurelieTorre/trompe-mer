@@ -1,15 +1,19 @@
 .footer {
   background-color: var(--mer-sombre);
   color: var(--ecume);
-  height: 5.56vw;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
 }
 
-.footer>p {
+.large {
   color: var(--ecume);
+}
+
+.small {
+  display: none;
 }
 
 #ob {
@@ -21,4 +25,26 @@ a {
   margin: 5px;
   text-decoration: none;
   color: var(--ecume);
+}
+
+@media (max-width: 694px) {
+  .large {
+    display: none;
+  }
+
+  .small {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    line-height: 0.6rem;
+  }
+
+  .small>p {
+    color: var(--ecume);
+    font-size: 1rem;
+  }
+
+  #ob {
+    transform: translateY(3px);
+  }
 }

@@ -8,10 +8,17 @@ const Footer = () => {
 
   return (
     <div className={s.footer}>
-      <p>
+      <p className={s.large}>
         <Link to="/mentions">Mentions légales</Link>| Réseaux sociaux : <a href="https://www.facebook.com/vidateliervirginie" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
         <a href="https://virginietorre.over-blog.com" target="_blank"><img src={logo} alt="Over-blog" id={s.ob} /></a>
       </p>
+      <div className={s.small}>
+        <Link to="/mentions">Mentions légales</Link>
+        <p>
+          Réseaux sociaux : <a href="https://www.facebook.com/vidateliervirginie" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
+          <a href="https://virginietorre.over-blog.com" target="_blank"><img src={logo} alt="Over-blog" id={s.ob} /></a>
+        </p>
+      </div>
     </div>
   );
 };
