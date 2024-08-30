@@ -300,6 +300,12 @@ footer {
   transform: scale(1.05);
 }
 
+@media (max-width: 1100px) {
+  .card-container {
+    margin: 0 1.8vw;
+  }
+}
+
 @media (max-width: 980px) {
   .devis>h2 {
     padding-left: 6vw;
@@ -316,6 +322,14 @@ footer {
   .devis>h2 {
     font-size: 1.8rem;
     padding-left: 4vw;
+  }
+}
+
+@media (max-width: 855px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
   }
 }
 
