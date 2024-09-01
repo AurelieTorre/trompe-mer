@@ -301,6 +301,16 @@ footer {
 }
 
 @media (max-width: 1100px) {
+  .part-top>img {
+    width: 25vw;
+  }
+
+  .part-bottom>img {
+    width: 40vw;
+    height: 40vw;
+    margin-top: 4vw;
+  }
+
   .card-container {
     margin: 0 1.8vw;
   }
@@ -313,7 +323,8 @@ footer {
     padding-left: 6vw;
   }
 
-  .text-detail {
+  .text-detail,
+  .how {
     width: 480px;
   }
 }
@@ -403,6 +414,28 @@ footer {
   .text-detail {
     width: 90vw;
   }
+
+  .opus-grid {
+    gap: 4vw;
+  }
+
+  .opus-part {
+    flex-direction: column;
+    align-items: center;
+    gap: 4vw;
+  }
+
+  #chabaud,
+  #jc {
+    max-width: 55vw;
+    height: auto;
+  }
+
+  #alain,
+  #botton {
+    max-width: 95vw;
+    height: auto;
+  }
 }
 
 @media (max-width: 620px) {
@@ -414,15 +447,44 @@ footer {
   #frames {
     width: auto;
   }
+
+  .part-top,
+  .part-bottom {
+    flex-direction: column;
+    gap: 4vw;
+  }
+
+  .part-top>img,
+  .part-bottom>img {
+    width: 90vw;
+  }
+
+  .part-bottom>img {
+    height: 90vw;
+  }
+
+  #chabaud,
+  #jc {
+    max-width: 65vw;
+    height: auto;
+  }
 }
 
 @media (max-width: 530px) {
-  .text-detail {
+
+  .text-detail,
+  .how {
     width: 87vw;
   }
 
   #frames {
     width: 95vw;
+  }
+
+  #chabaud,
+  #jc {
+    max-width: 80vw;
+    height: auto;
   }
 
 }
@@ -443,8 +505,15 @@ footer {
     width: 272px;
   }
 
-  .text-detail {
+  .text-detail,
+  .how {
     width: 85vw;
+  }
+
+  #chabaud,
+  #jc {
+    max-width: 95vw;
+    height: auto;
   }
 }
 
@@ -456,7 +525,8 @@ footer {
     padding-left: 6vw;
   }
 
-  .text-detail {
+  .text-detail,
+  .how {
     width: 82vw;
   }
 
