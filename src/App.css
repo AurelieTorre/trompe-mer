@@ -421,6 +421,10 @@ footer {
     width: 87vw;
   }
 
+  #frames {
+    width: 95vw;
+  }
+
 }
 
 @media (max-width: 425px) {
@@ -454,6 +458,10 @@ footer {
 
   .text-detail {
     width: 82vw;
+  }
+
+  #frames {
+    width: 97.5vw;
   }
 
   .devis .svg-inline--fa {

@@ -1,30 +1,27 @@
 .carrousel {
   position: relative;
-  width: 85vw;
+  width: 98.5vw;
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .imageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  position: relative;
+  max-width: 95vw;
   margin: 1vw;
 }
 
 .image {
   width: auto;
-  height: 95vh;
+  max-width: 100%;
+  max-height: 95vh;
 }
 
 .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   background: none;
   color: var(--goemon);
   /* Couleur de la flèche */
@@ -33,24 +30,33 @@
   font-size: 5.5rem;
   /* Taille des flèches */
   cursor: pointer;
-  padding: 0.5rem;
   outline: none;
   /* Supprimer le contour par défaut */
   z-index: 1;
   /* S'assurer que les flèches sont au-dessus des images */
 }
 
-.arrow.left {
-  left: -7vh;
-  /* Décale la flèche vers la gauche en dehors de l'image */
-}
-
-.arrow.right {
-  right: -7vh;
-  /* Décale la flèche vers la droite en dehors de l'image */
-}
-
 .arrow:hover {
   color: var(--mer-claire);
   /* Changer la couleur au survol */
+}
+
+@media (max-width: 768px) {
+  .carrousel {
+    width: 97vw;
+  }
+
+  .arrow {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carrousel {
+    width: 95vw;
+  }
+
+  .arrow {
+    font-size: 2.5rem;
+  }
 }
