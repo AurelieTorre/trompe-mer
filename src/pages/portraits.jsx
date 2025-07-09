@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import alain from "../assets/alainhergott.jpg";
-import botton from "../assets/botton.jpg";
-import chabaud from "../assets/cathchab.jpg";
-import jc from "../assets/jclecloarec.jpg";
+import alain from "../assets/alainhergott.webp";
+import botton from "../assets/botton.webp";
+import chabaud from "../assets/cathchab.webp";
+import jc from "../assets/jclecloarec.webp";
 
 
 const Portrait = () => {

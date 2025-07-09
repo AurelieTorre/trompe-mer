@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import s from "./style.module.css";
-import vague from "../../assets/bout-vague.jpg";
+import vague from "../../assets/bout-vague.webp";
 
 const Banner = () => {
 

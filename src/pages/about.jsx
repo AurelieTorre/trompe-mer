@@ -1,9 +1,8 @@
-import React from 'react';
 import Atelier1 from '../assets/atelier1.jpg';
 import Atelier2 from '../assets/atelier2.jpg';
 import Atelier3 from '../assets/atelier5.jpg';
 import Atelier4 from '../assets/atelier10.jpg';
-import Atelier5 from '../assets/atelier4.jpg';
+import Atelier5 from '../assets/atelier4.webp';
 import Coupure from '../assets/QdA_page_Virginie_Thery_1.png';
 
 const About = () => {

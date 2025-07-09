@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import Vetheuil from '../assets/vetheuil.jpg';
-import Port from '../assets/fenetre-chat.jpg';
+import Vetheuil from '../assets/vetheuil.webp';
+import Port from '../assets/fenetre-chat.webp';
 import Palier from '../assets/palier.jpg';
 import Plantes from '../assets/plantesvertes.jpg';
 import Steir from '../assets/fresque-steir.jpg';

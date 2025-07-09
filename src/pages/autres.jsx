@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import Card from '../components/card/Card.jsx';
 import Milliers from '../assets/desmilliers.jpg';
 import Ecume from '../assets/ecume.jpg';
@@ -28,7 +27,7 @@ import Cailloux1 from '../assets/cailloux1.jpg';
 import Cailloux2 from '../assets/cailloux2.jpg';
 import Cailloux3 from '../assets/cailloux3.jpg';
 import Sage from '../assets/sage.jpg';
-import Vue from '../assets/vue.jpg';
+import Vue from '../assets/vue.webp';
 import Pile from '../assets/pile.jpg';
 import Contrebasse from '../assets/contrebasse.jpg';
 import Piano from '../assets/piano.jpg';
