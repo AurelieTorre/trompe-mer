@@ -16,6 +16,7 @@ Ce projet est une application web **Single Page Application (SPA)** développée
 - CSS (styles personnalisés via `App.css` et `index.css`)
 
 ## 📁 Structure du projet
+```text
 public/
 ├── favicon.ico
 ├── index.html
@@ -28,6 +29,7 @@ src/
 ├── index.js
 └── index.css
 .env # Contenant la clé d'API pour l'horaire des marées
+```
 
 ## ▶️ Démarrer le projet en local
 
